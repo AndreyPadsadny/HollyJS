@@ -49,3 +49,26 @@
 // let accum = new Acomulator(1);
 // accum.read();
 // console.log(accum.value);
+
+// Вам попал в руки код объекта User, который хранит имя и фамилию в свойстве this.fullName:
+// Имя и фамилия всегда разделяются пробелом.
+// Сделайте, чтобы были доступны свойства firstName и lastName, причём не только на чтение, но и на запись, вот так:
+
+// function User(fullName) {
+//   this.fullName = fullName;
+// }
+// 	Object.defineProperty(user, "fullName", {
+
+// 		get: function() {
+//     return this.firstName + ' ' + this.LastName;
+//   	}
+
+// 		set: function(value) {
+// 			var split=value.split(' ');
+// 			this.firstName = split[0];
+// 			this.LastName = split[1];
+// 		}
+
+// 	});
+// var vasya = new User("Василий Попкин");
+// console.log(vasya)
