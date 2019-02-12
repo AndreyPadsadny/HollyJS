@@ -54,21 +54,32 @@
 // Имя и фамилия всегда разделяются пробелом.
 // Сделайте, чтобы были доступны свойства firstName и lastName, причём не только на чтение, но и на запись, вот так:
 
+// 'use strict'
 // function User(fullName) {
 //   this.fullName = fullName;
-// }
-// 	Object.defineProperty(user, "fullName", {
 
+
+// 	Object.defineProperty(this, "firstName" ,{
 // 		get: function() {
-//     return this.firstName + ' ' + this.LastName;
-//   	}
+// 			return this.fullName.split(" ")[0];
+// 		},
 
 // 		set: function(value) {
-// 			var split=value.split(' ');
-// 			this.firstName = split[0];
-// 			this.LastName = split[1];
+// 			this.firstName = value;
 // 		}
-
 // 	});
-// var vasya = new User("Василий Попкин");
-// console.log(vasya)
+
+// 		Object.defineProperty(this, "lastName" ,{
+// 		get: function() {
+// 			return this.fullName.split(" ")[1];
+// 		},
+
+// 		set: function(value) {
+// 			this.lastName = value;
+// 		}
+// 	});
+
+// }
+
+// var vasya = new User("Василий Пупкин");
+// console.log(vasya.lastName)
