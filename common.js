@@ -83,3 +83,15 @@
 
 // var vasya = new User("Василий Пупкин");
 // console.log(vasya.lastName)
+
+//число фибоначчи
+// function fib (n) {
+// 	let res;
+// 	if (n>=2) {
+// 			return res=fib(n-1)+fib(n-2);
+// 	}
+// 	else {
+// 			return n;
+// 	}
+// }
+// console.log(fib(6));
