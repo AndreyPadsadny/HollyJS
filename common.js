@@ -105,3 +105,16 @@
 // }
 
 // console.log(factorial(5));
+
+
+//возведение в квадрат числа.
+// function squareDigits(num){
+// 	let count = num.toString();
+// 	let res = [];
+
+// 	for ( let i=0; i<count.length; i++) {
+// 			res.push(parseInt(count[i]));
+// 			res[i] = res[i] * res[i];
+// 	}
+// 	return res;
+// }
