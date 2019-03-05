@@ -118,3 +118,20 @@
 // 	}
 // 	return res;
 // }
+
+// function task2() {
+//   let arr = [3, 6, 7, undefined, 10, 35, 67];
+
+//   let idx = +prompt('Введите индекс');
+
+//   if (idx < arr.length && arr[idx]) {
+//     console.log('Элемент существует.');
+//     console.log(arr[idx]);
+
+//     let val = arr[idx];
+//     arr.splice(idx, 1);
+//     arr.push(val);
+//   } else {
+//     console.log('Ничего нет :(');
+//   }
+// }
